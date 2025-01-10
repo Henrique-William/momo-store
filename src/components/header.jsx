@@ -11,14 +11,14 @@ function Header() {
         <img
           src="images/people-header.png"
           alt=""
-          className="w-full object-contain h-full md"
+          className="w-full h-full object-cover "
         />
 
         <div className="w-full h-full pt-52 bg-slate-800 pl-16">
           <div className="w-2/3 text-white pb-7 flex flex-col gap-2">
             <h1 className="text-7xl font-semibold text-left">
               Bring the warmth.
-            </h1>
+            </h1>               
             <p>
               Everyone needs a good winter jacket. Find yours with our
               collection and more.
