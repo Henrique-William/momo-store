@@ -3,13 +3,13 @@ import StarRating from "./starRating";
 
 function Product({ id, title, price, img, stars, tag, sale, saleValue }) {
   return (
-    <div className="flex flex-col gap-3 group cursor-pointer h-full hover:scale-105 duration-500">
+    <div className="flex flex-col gap-3 w-full aspect-[9/16] group cursor-pointer hover:scale-105 duration-500">
       {/* image-holder */}
-      <div className="bg-holder w-full h-80 relative p-4 box-border">
+      <div className="bg-holder w-full h-3/4 relative p-4 box-border">
         <img
           src={img}
           alt="imagem de fone"
-          className="h-full w-full scale-75 object-scale-down "
+          className="h-full w-full object-cover absolute left-0 top-0"
         />
         {/* Tags */}
         <div className="absolute flex flex-col gap-2 top-4 left-4">
@@ -37,8 +37,8 @@ function Product({ id, title, price, img, stars, tag, sale, saleValue }) {
           </p>
         ) : (
           <p className="h-1/4 flex text-dark font-semibold text-sm gap-2">
-            ${price - (price * (saleValue / 100)).toFixed(2)}
-            <span className="text-subtitle  line-through">
+            ${(price - (price * (saleValue / 100))).toFixed(2)}
+            <span className="text-subtitle font-medium line-through">
               ${price.toFixed(2)}
             </span>
           </p>

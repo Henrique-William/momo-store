@@ -17,31 +17,33 @@ function Menu() {
     <>
       {/* menu */}
       <div className="flex items-center justify-between mx-40 py-4 box-border max-md:mx-8">
-        <img src="/images/logo.png" alt="Logo" />
+        <img src="/images/logo.svg" alt="Logo" />
 
         <ul className="w-96 flex justify-around max-md:hidden">
           <a href="/">
             <li>Home</li>
           </a>
-          <a href="/">
+          <a href="/" className="flex items-center gap-1">
             <li>loja</li>
+            <img src="images/icon/chevron-down.svg" alt="" />
           </a>
-          <a href="/">
+          <a href="/" className="flex items-center gap-1">
             <li>Produtos</li>
+            <img src="images/icon/chevron-down.svg" alt="" />
           </a>
           <a href="/">
             <li>Contato</li>
           </a>
         </ul>
 
-        <div className="flex items-center">
+        <div className="flex items-center gap-4">
           <a className="max-md:hidden" href="/">
             <img src="/images/icon/search.svg" alt="Pesquisar" />
           </a>
           <a className="max-md:hidden" href="/">
             <img src="/images/icon/user-circle.svg" alt="perfil" />
           </a>
-          <div className="flex items-center">
+          <div className="flex items-center gap-1">
             <a href="/">
               <img src="/images/icon/shopping-bag.svg" alt="sacola" />
             </a>

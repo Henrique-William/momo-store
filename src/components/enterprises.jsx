@@ -13,16 +13,19 @@ const images = [
 function Enterprises() {
   return (
     <>
-      <div className="mx-40 my-10 grid grid-cols-6 gap-6 max-md:mx-8 max-md:hidden">
-        <img src="/images/team-logo/logo01.svg" alt="logo de empresas" />
-        <img src="/images/team-logo/logo02.svg" alt="logo de empresas" />
-        <img src="/images/team-logo/logo03.svg" alt="logo de empresas" />
-        <img src="/images/team-logo/logo04.svg" alt="logo de empresas" />
-        <img src="/images/team-logo/logo05.svg" alt="logo de empresas" />
-        <img src="/images/team-logo/logo06.svg" alt="logo de empresas" />
+      <div className="mx-40 my-10 ">
+        <h3 className="text-xl font-semibold text-center pb-4">Trending Brands</h3>
+        <div className="grid grid-cols-6 gap-6 max-md:mx-8 max-md:hidden">
+          <img src="/images/team-logo/logo01.svg" alt="logo de empresas" />
+          <img src="/images/team-logo/logo02.svg" alt="logo de empresas" />
+          <img src="/images/team-logo/logo03.svg" alt="logo de empresas" />
+          <img src="/images/team-logo/logo04.svg" alt="logo de empresas" />
+          <img src="/images/team-logo/logo05.svg" alt="logo de empresas" />
+          <img src="/images/team-logo/logo06.svg" alt="logo de empresas" />
+        </div>
       </div>
 
-      <Swiper
+      {/* <Swiper
         slidesPerView={2.5}
         spaceBetween={16}
         pagination={{
@@ -35,7 +38,7 @@ function Enterprises() {
             <img src={`/images/team-logo/${images}`} alt="logo de empresas" />
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
     </>
   );
 }

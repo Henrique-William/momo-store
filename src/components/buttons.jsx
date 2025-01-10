@@ -10,7 +10,7 @@ export function ProductLikeButton() {
 
   return (
     <button
-      className="absolute w-fit top-4 right-4 p-2 bg-white rounded-full shadow-xl hidden group-hover:block hover:scale-75 duration-500"
+      className="absolute w-fit top-4 right-4 p-2 bg-white rounded-full shadow-xl opacity-0 group-hover:block group-hover:opacity-100 duration-500"
       onClick={toggleButton}
     >
       {isliked ? <RiHeart3Fill size={20} /> : <RiHeart3Line size={20} />}
@@ -27,9 +27,9 @@ export function AddToBag() {
   return (
     <button
       onClick={handleBag}
-      className={`absolute bottom-4 left-4 right-4 py-3 rounded-lg text-base hidden ${
+      className={`absolute bottom-4 left-4 right-4 py-3 rounded-lg text-base opacity-0 ${
         !isBagged ? "bg-dark text-white" : "bg-subtitle text-white"
-      } group-hover:block`}
+      } group-hover:block group-hover:opacity-100 duration-500`}
     >
       {!isBagged ? <p>Add to bag</p> : <p>Remove from bag</p>}
     </button>

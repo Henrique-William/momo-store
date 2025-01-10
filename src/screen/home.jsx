@@ -8,19 +8,23 @@ import PromotionCount from "../components/promotionCount";
 import HomeInfo from "../components/homeInfo";
 import Socials from "../components/socials";
 import Footer from "../components/footer";
+import HomePromotion from "../components/homePromotion";
+import LatestArticles from "../components/latestArticles";
 
 function Home() {
   return (
     <>
-      <Header/>
-      <Enterprises/>
-      <CarouselProduct productList={productList} />
-      <ShopCollection/>
-      <BestSeller productList={productList}/>
-      <PromotionCount/>
-      <HomeInfo/>
-      <Socials/>
-      <Footer/>
+      <Header />
+      <Enterprises />
+      {/* <CarouselProduct productList={productList} /> */}
+      <ShopCollection />
+      <BestSeller productList={productList} />
+      <PromotionCount />
+      <HomePromotion />
+      <LatestArticles />
+      <Socials />
+      <HomeInfo />
+      <Footer />
     </>
   );
 }

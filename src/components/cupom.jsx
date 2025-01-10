@@ -10,16 +10,16 @@ function Cupom() {
     <div>
       {/* Cupom */}
       {showCoupon && (
-        <div className="w-full bg-black flex items-center justify-center text-white p-2 gap-2 text-sm">
+        <div className="w-full bg-blue-600 flex items-center justify-center text-white p-2 gap-2 text-sm">
           <img src="/images/icon/ticket-percent.svg" alt="Ícone de cupom" />
 
           <p>30% de desconto — Tempo Limitado!</p>
 
-          <div className="flex border-b-2 border-yellow-500 max-md:hidden">
-            <a href="/" className="text-yellow-500">
+          <div className="flex items-center gap-1 border-b-2 border-white max-md:hidden">
+            <a href="/" className="text-white">
               Compre Agora
             </a>
-            <img src="/images/icon/arrow-right.svg" alt="icone de seta" />
+            <img src="/images/icon/arrow-right.png" alt="icone de seta" className="w-4 h-4"/>
           </div>
 
           <div

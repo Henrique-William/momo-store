@@ -3,32 +3,30 @@ import Menu from "./menu";
 
 function Header() {
   return (
-    <section className="h-screen w-screen max-w-full flex flex-col justify-between bg-gradient-to-b from-gradient1 to-gradient2 overflow-x-hidden overflow-y-hidden">
+    <section className="h-screen w-screen max-w-full flex flex-col justify-between overflow-x-hidden overflow-y-hidden">
+      <Cupom />
+      <Menu />
       {/* Header */}
-      <div className="h-1/6">
-        <Cupom />
-        <Menu />
-      </div>
-      <div className="flex h-5/6 w-full max-md:hidden">
+      <div className="grid grid-cols-2 h-full w-full max-md:hidden">
         <img
           src="images/people-header.png"
           alt=""
-          className="w-2/4 object-contain h-full md"
+          className="w-full object-contain h-full md"
         />
 
-        <div className="w-2/4 h-full flex flex-col justify-center ">
-          <h1 className="text-8xl font-medium text-left my-2 pb-10">
-            Listen to <br />
-            the <b className="text-blue-500 font-medium">amazing</b>
-            <br />
-            music sound.
-            <p className="text-xl font-normal">
-              Experience music like never before
+        <div className="w-full h-full pt-52 bg-slate-800 pl-16">
+          <div className="w-2/3 text-white pb-7 flex flex-col gap-2">
+            <h1 className="text-7xl font-semibold text-left">
+              Bring the warmth.
+            </h1>
+            <p>
+              Everyone needs a good winter jacket. Find yours with our
+              collection and more.
             </p>
-          </h1>
+          </div>
 
           <p
-            className="py-3 px-14 w-fit bg-dark text-white rounded-md cursor-pointer"
+            className="py-3 px-14 w-fit bg-blue-600 text-white rounded-md cursor-pointer"
             id="button"
           >
             Shopping Now

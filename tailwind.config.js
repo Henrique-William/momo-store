@@ -40,8 +40,9 @@ module.exports = {
         subtitle: "#6C7275",
         holder: "#F3F5F7",
         grayBorder: "#E8ECEF",
-        promotion: "rgba(255, 171, 0, 0.4)",
+        promotion: "#F3F5F7",
         socials: "#F2F4F6",
+        input: "#C9CDD0",
       },
       keyframes: {
         scaleUpDown: {

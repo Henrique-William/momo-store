@@ -1,58 +1,84 @@
 function Footer() {
   return (
-    <section className="px-40 pt-20 pb-8 bg-dark max-md:px-8 max-md:py-12">
-      <div className="flex flex-col gap-14 max-md:gap-10">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 max-md:gap-10">
-          {/* logo footer */}
-          <div className="justify-between max-md:flex max-md:flex-col max-md:gap-10">
-            <div className="flex gap-8 max-md:flex-col max-md:items-center">
-              <img
-                src="images/icon/logo-footer.svg"
-                alt="logo Elegant"
-                className="max-md:w-fit"
-              />
-              <img
-                src="images/rectangle.png"
-                alt=""
-                className="h-full max-md:hidden"
-              />
-              <p className="text-white w-fit text-sm">Headphone Store</p>
-            </div>
-            {/* menu footer */}
+    <section className="flex flex-col gap-16 px-40 pt-20 pb-8 bg-grayBorder max-md:px-8 max-md:py-12">
+      <div className="flex justify-between">
+        <div className="flex flex-col gap-8 pr-48">
+          <img src="/images/logo.svg" alt="Logo" className="" />
+          <div className="text-dark text-sm flex flex-col gap-4">
+            <p className="">
+              43111 Hai Trieu street,
+              <br /> District 1, HCMC
+              <br />
+              Vietnam
+            </p>
+            <p>84-756-3237</p>
           </div>
-          <div>
-            <ul className="flex gap-10 justify-end text-white max-md:flex-col max-md:gap-8 max-md:items-center">
-              <a href="/">
-                <li>Home</li>
-              </a>
-              <a href="/">
-                <li>loja</li>
-              </a>
-              <a href="/">
-                <li>Produtos</li>
-              </a>
-              <a href="/">
-                <li>Contato</li>
-              </a>
-            </ul>
+          <div className="flex gap-6">
+            <a href="http://www.instagram.com" target="new"><img src="images/icon/instagram.svg" alt="" /></a>
+            <a href="http://www.facebook.com" target="new"><img src="images/icon/facebook.svg" alt="" /></a>
+            <a href="http://www.youtube.com" target="new"><img src="images/icon/youtube.svg" alt="" /></a>
           </div>
         </div>
-        {/*  */}
-        <div className="flex items-center justify-between py-4 max-md:flex-col-reverse max-md:gap-7">
-          <div className="flex items-center gap-7 max-md:flex-col-reverse ">
-            <p className="text-subtitle font-normal text-sm">
-              Copyright © 2023 3legant. All rights reserved
+
+        <div className="flex flex-col gap-10 pr-18">
+          <h3 className="text-base font-semibold">Page</h3>
+          <div className="text-sm font-normal flex flex-col gap-6">
+            <p>Home</p>
+            <p>Shop</p>
+            <p>Product</p>
+            <p>Articles</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-10 pr-18">
+          <h3 className="text-base font-semibold">Info</h3>
+          <div className="text-sm font-normal flex flex-col gap-6">
+            <p>Shipping Policy</p>
+            <p>Return & Refund</p>
+            <p>Support</p>
+            <p>FAQs</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-10 w-1/4">
+          <h3 className="text-base font-semibold">Join Newsletter</h3>
+          <div className="flex flex-col gap-6">
+            <p>
+              Subscribe our newsletter to get more deals, new products and
+              promotions
             </p>
-            <div className="flex gap-7 max-md:flex">
-              <p className="text-white text-xs font-semibold">Privacy Policy</p>
-              <p className="text-white text-xs font-semibold">Terms of Use</p>
+            <div className="relative">
+              <input
+                type="email"
+                placeholder="enter your email"
+                className="w-full h-12 rounded-full border-2 border-input bg-transparent p-4 placeholder:font-poppins placeholder:subtitle"
+              />
+              <button className="p-2 bg-blue-600 absolute right-2 top-2 rounded-full hover:opacity-80">
+                <img
+                  src="images/icon/arrow-right-white.png"
+                  alt=""
+                  className="w-4 h-4"
+                />
+              </button>
             </div>
           </div>
-          <div className="flex items-center gap-6">
-            <a href="https://www.instagram.com/" target="new"><img src="/images/icon/instagram.svg" alt="" /></a>
-            <a href="https://www.facebook.com/" target="new"><img src="/images/icon/facebook.svg" alt="" /></a>
-            <a href="https://www.youtube.com/" target="new"><img src="/images/icon/youtube.svg" alt="" /></a>
-          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-between items-center border-t-2 border-t-subtitle py-8">
+        <div className="text-dark text-xs flex gap-4">
+          <p>Copyright © 2023 3legant. All rights reserved</p>
+          <p className="border-l-2 pl-4 border-l-subtitle">Privacy Policy</p>
+          <p>Terms & Conditions</p>
+        </div>
+        <div className="flex gap-2">
+          <img src="images/icon/visa.svg" alt="" />
+          <img src="images/icon/american-express.svg" alt="" />
+          <img src="images/icon/mastercard.svg" alt="" />
+          <img src="images/icon/stripe.svg" alt="" />
+          <img src="images/icon/paypal.svg" alt="" />
+          <img src="images/icon/apple-pay.svg" alt="" />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import { ShopNow } from "./buttons";
 
 function PromotionCount() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-10-31 : 23:59:59") - +new Date();
+    const difference = +new Date("2025-03-31 : 23:59:59") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -38,7 +38,7 @@ function PromotionCount() {
       {timeLeft && (
         <section className="grid grid-cols-2 h-fit max-md:grid-cols-1 max-md:grid max-md:grid-flow-dense">
           <img
-            src="/images/promotion-img.png"
+            src="/images/promotion-img2.png"
             alt=""
             className="max-md:order-2 w-full h-full object-cover max-md:w-full max-md:h-96"
           />
@@ -53,7 +53,7 @@ function PromotionCount() {
                 Hurry up! 40% OFF
               </h2>
               <p className="text-xl max-md:text-sm">
-                Thousands of high tech are waiting for you
+              Hurry up!!! Winter is coming!
               </p>
             </div>
             {/* countdown */}
